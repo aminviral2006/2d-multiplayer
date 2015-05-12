@@ -1,7 +1,14 @@
+@import url('../vendor/semantic-ui/dist/semantic.css');
+
+.ui.segment.main_block {
+  width: 800px;
+  margin: 50px auto 0;
+}
+
+.main-menu {
+  text-align: center;
+}
+
 body {
-  background: #D3D3D3;
-  color: #434343;
-  h1 {
-    color: #333333;
-  }
+  overflow-y: hidden;
 }

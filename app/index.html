@@ -1,16 +1,18 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="Game">
 <head>
-  <title>My awesome app</title>
-  <link rel="stylesheet" href="css/main.css" />
+    <title>Multiplayer game</title>
+    <link rel="stylesheet" href="css/bundle.css" />
 </head>
-<body ng-controller='WelcomeCtrl'>
-
-  <h1>My awesome app</h1>
-
-  <p>{{testVar}}</p>
-
-  <script src="/js/bundle.js"></script>
-
+<body>
+    <div ui-view="main"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+    <script src="/js/phaser.js"></script>
+    <script src="/js/bundle.js"></script>
+    <script>
+//        setInterval(function () {
+//            console.log('render');
+//        }, 1000);
+    </script>
 </body>
 </html>
